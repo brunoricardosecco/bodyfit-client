@@ -1,18 +1,19 @@
 package com.bodyfit.dto;
 
+import com.bodyfit.model.Bodybuilder;
 import com.bodyfit.model.Instructor;
 
 public class LoginDto {
     private Boolean success;
     private String errorMessage;
-    private Instructor instructor;
+    private Bodybuilder bodybuilder;
 
     @Override
     public String toString() {
         return "LoginDto{" +
                 "success=" + success +
                 ", errorMessage='" + errorMessage + '\'' +
-                ", instructor=" + instructor +
+                ", bodybuilder=" + bodybuilder +
                 '}';
     }
 
@@ -20,10 +21,10 @@ public class LoginDto {
 
     }
 
-    public LoginDto(Boolean success, String message, Instructor instructor) {
+    public LoginDto(Boolean success, String message, Bodybuilder bodybuilder) {
         this.success = success;
         this.errorMessage = message;
-        this.instructor = instructor;
+        this.bodybuilder = bodybuilder;
     }
 
     public String getMessage() {
@@ -34,12 +35,12 @@ public class LoginDto {
         this.errorMessage = message;
     }
 
-    public Instructor getInstructor() {
-        return instructor;
+    public Bodybuilder getBodybuilder() {
+        return bodybuilder;
     }
 
-    public void setInstructor(Instructor instructor) {
-        this.instructor = instructor;
+    public void setBodybuilder(Bodybuilder bodybuilder) {
+        this.bodybuilder = bodybuilder;
     }
 
     public Boolean getSuccess() {

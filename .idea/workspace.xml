@@ -3,9 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="b9e7f64c-4f34-4622-a354-bc24387ada47" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BodyFit.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BodyFit.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bodyfit/controller/TestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bodyfit/controller/bodybuillder/BodybuilderListController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bodyfit/controller/dashboard/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bodyfit/controller/dashboard/DashboardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/dashboard/dashboard_instructor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/dashboard/dashboard_instructor.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/dashboard/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/dashboard/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bodyfit/controller/evaluation/EvaluationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bodyfit/controller/evaluation/EvaluationItemController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bodyfit/controller/instructor/InstructorListController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bodyfit/controller/login/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bodyfit/controller/login/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bodyfit/controller/signup/SignupBodybuilderController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bodyfit/controller/signup/SignupInstructorController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bodyfit/dao/EvaluationDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bodyfit/dao/InstructorDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bodyfit/dao/LoginDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bodyfit/dao/LoginDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bodyfit/dto/LoginDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bodyfit/dto/LoginDto.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,11 +31,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bodyfit/controller/dashboard/DashboardController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+            <state relative-caret-position="-815">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bodyfit/controller/bodybuilder/BodybuilderController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bodyfit/dto/LoginDto.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-336">
+              <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#689#690#0" expanded="true" />
+                <element signature="e#724#725#0" expanded="true" />
+                <element signature="e#770#771#0" expanded="true" />
+                <element signature="e#813#814#0" expanded="true" />
+                <element signature="e#854#855#0" expanded="true" />
+                <element signature="e#887#888#0" expanded="true" />
+                <element signature="e#943#944#0" expanded="true" />
+                <element signature="e#987#988#0" expanded="true" />
+                <element signature="e#1022#1023#0" expanded="true" />
+                <element signature="e#1052#1053#0" expanded="true" />
+                <element signature="e#1099#1100#0" expanded="true" />
+                <element signature="e#1137#1138#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bodyfit/controller/login/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-84">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -33,13 +89,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/view/dashboard/dashboard_instructor.fxml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bodyfit/dao/LoginDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="51" />
+            <state relative-caret-position="781">
+              <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
     </leaf>
@@ -62,7 +120,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bodyfit/Main.java" />
         <option value="$PROJECT_DIR$/src/main/resources/view/login/styles.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/bodyfit/helper/RequestRunnable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bodyfit/dto/LoginDto.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/bodyfit/model/Instructor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bodyfit/controller/login/DashboardController.java" />
@@ -73,13 +130,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bodyfit/dao/bodyBuilderListDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bodyfit/model/Bodybuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bodyfit/dto/BodyBuilderDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bodyfit/dao/LoginDAO.java" />
         <option value="$PROJECT_DIR$/src/main/resources/view/components/list-item/list-item.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/view/lists/instructorList.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/com/bodyfit/dao/InstructorListDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bodyfit/dao/BodyBuilderListDAO.java" />
         <option value="$PROJECT_DIR$/src/main/resources/view/lists/bodybuilderList.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bodyfit/controller/login/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bodyfit/controller/bodybuillder/BodybuilderListController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bodyfit/dao/BodybuilderDAO.java" />
         <option value="$PROJECT_DIR$/src/main/resources/view/signup/bodybuilderSignup.fxml" />
@@ -87,7 +142,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bodyfit/controller/instructor/InstructorListController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bodyfit/dao/InstructorDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bodyfit/controller/signup/SignupInstructorController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bodyfit/controller/login/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bodyfit/dto/LoginDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bodyfit/dao/LoginDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bodyfit/controller/dashboard/DashboardController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bodyfit/controller/bodybuilder/BodybuilderController.java" />
       </list>
     </option>
   </component>
@@ -98,7 +157,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="1438" />
     <option name="width" value="1924" />
     <option name="height" value="1082" />
@@ -111,62 +170,62 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="bodyfit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bodyfit" type="462c0819:PsiDirectoryNode" />
+              <item name="body-fit-client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bodyfit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bodyfit" type="462c0819:PsiDirectoryNode" />
+              <item name="body-fit-client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bodyfit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bodyfit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bodyfit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bodyfit" type="462c0819:PsiDirectoryNode" />
+              <item name="body-fit-client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bodyfit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bodyfit" type="462c0819:PsiDirectoryNode" />
+              <item name="body-fit-client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bodyfit" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bodyfit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bodyfit" type="462c0819:PsiDirectoryNode" />
+              <item name="body-fit-client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="bodyfit" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bodyfit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bodyfit" type="462c0819:PsiDirectoryNode" />
+              <item name="body-fit-client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="bodyfit" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="bodybuillder" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bodyfit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="body-fit-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="bodyfit" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="bodybuilder" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bodyfit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="body-fit-client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -176,27 +235,7 @@
             </path>
             <path>
               <item name="bodyfit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bodyfit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bodyfit" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="evaluation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bodyfit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bodyfit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bodyfit" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="instructor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bodyfit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bodyfit" type="462c0819:PsiDirectoryNode" />
+              <item name="body-fit-client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -206,17 +245,7 @@
             </path>
             <path>
               <item name="bodyfit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bodyfit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bodyfit" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="signup" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bodyfit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bodyfit" type="462c0819:PsiDirectoryNode" />
+              <item name="body-fit-client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -225,7 +254,7 @@
             </path>
             <path>
               <item name="bodyfit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bodyfit" type="462c0819:PsiDirectoryNode" />
+              <item name="body-fit-client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -234,7 +263,7 @@
             </path>
             <path>
               <item name="bodyfit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bodyfit" type="462c0819:PsiDirectoryNode" />
+              <item name="body-fit-client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -243,7 +272,7 @@
             </path>
             <path>
               <item name="bodyfit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bodyfit" type="462c0819:PsiDirectoryNode" />
+              <item name="body-fit-client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -252,65 +281,30 @@
             </path>
             <path>
               <item name="bodyfit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bodyfit" type="462c0819:PsiDirectoryNode" />
+              <item name="body-fit-client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bodyfit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bodyfit" type="462c0819:PsiDirectoryNode" />
+              <item name="body-fit-client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bodyfit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bodyfit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="avaliacoes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bodyfit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bodyfit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bodyfit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bodyfit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="lists" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bodyfit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bodyfit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="signup" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
@@ -365,9 +359,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1438" y="0" width="1924" height="1082" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21170212" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21382979" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -375,7 +368,7 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3290735" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3258786" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -485,13 +478,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bodyfit/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="18" column="87" selection-start-line="18" selection-start-column="87" selection-end-line="18" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bodyfit/controller/TestController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
@@ -527,17 +513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="635">
           <caret line="87" selection-start-line="87" selection-end-line="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bodyfit/dto/LoginDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-59">
-          <caret line="14" column="46" lean-forward="true" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
-          <folding>
-            <element signature="e#854#855#0" expanded="true" />
-            <element signature="e#887#888#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -581,16 +556,6 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bodyfit/dao/LoginDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/view/signup/bodybuilderSignup.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -614,10 +579,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="767">
           <caret line="100" column="22" selection-start-line="100" selection-start-column="22" selection-end-line="100" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getAll#0;class#InstructorListDAO#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -625,9 +586,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="571">
           <caret line="83" column="73" selection-start-line="83" selection-start-column="73" selection-end-line="83" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -663,9 +621,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="403">
           <caret line="117" column="22" selection-start-line="117" selection-start-column="22" selection-end-line="117" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -683,9 +638,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="669">
           <caret line="85" column="5" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -697,13 +649,6 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bodyfit/controller/login/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-787">
-          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/view/dashboard/dashboard_instructor.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -712,13 +657,69 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bodyfit/controller/dashboard/DashboardController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bodyfit/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+        <state relative-caret-position="336">
+          <caret line="18" column="87" selection-start-line="18" selection-start-column="87" selection-end-line="18" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bodyfit/dao/LoginDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="781">
+          <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bodyfit/dto/LoginDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-336">
+          <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#724#725#0" expanded="true" />
+            <element signature="e#770#771#0" expanded="true" />
+            <element signature="e#813#814#0" expanded="true" />
+            <element signature="e#854#855#0" expanded="true" />
+            <element signature="e#887#888#0" expanded="true" />
+            <element signature="e#943#944#0" expanded="true" />
+            <element signature="e#987#988#0" expanded="true" />
+            <element signature="e#1022#1023#0" expanded="true" />
+            <element signature="e#1052#1053#0" expanded="true" />
+            <element signature="e#1099#1100#0" expanded="true" />
+            <element signature="e#1137#1138#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bodyfit/controller/login/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-84">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bodyfit/controller/dashboard/DashboardController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-815">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bodyfit/controller/bodybuilder/BodybuilderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>

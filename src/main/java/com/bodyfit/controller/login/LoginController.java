@@ -2,6 +2,7 @@ package com.bodyfit.controller.login;
 
 import com.bodyfit.controller.dashboard.DashboardController;
 import com.bodyfit.dao.LoginDAO;
+import com.bodyfit.model.Bodybuilder;
 import com.bodyfit.model.Instructor;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -49,13 +50,13 @@ public class LoginController{
         login.setDisable(true);
         enter.setDisable(true);
 
-        Instructor instructor = loginDAO.login(id);
+        Bodybuilder bodybuilder = loginDAO.login(id);
 
-        if(instructor != null) {
+        if(bodybuilder != null) {
             DashboardController dashboardController = new DashboardController();
             Node source = (Node) event.getSource();
             Window stage = source.getScene().getWindow();
-            dashboardController.start((Stage)stage, instructor);
+            dashboardController.start((Stage)stage, bodybuilder);
         }
 
         login.setDisable(false);

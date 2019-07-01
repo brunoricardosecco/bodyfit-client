@@ -2,6 +2,7 @@ package com.bodyfit.dao;
 
 import com.bodyfit.dto.LoginDto;
 import com.bodyfit.helper.Request;
+import com.bodyfit.model.Bodybuilder;
 import com.bodyfit.model.Instructor;
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
@@ -15,12 +16,12 @@ import org.apache.http.util.EntityUtils;
 
 public class LoginDAO {
 
-    public Instructor login (String id) {
+    public Bodybuilder login (String id) {
         JsonObject json = new JsonObject();
         json.addProperty("code", id);
         HttpResponse httpResponse = null;
         try {
-            httpResponse = Request.post("https://app-bodyfit.herokuapp.com/instructor/login", json);
+            httpResponse = Request.post("https://app-bodyfit.herokuapp.com/bodybuilder/login", json);
         } catch (Exception err) {
             System.out.println("Erro");
         }
@@ -44,7 +45,7 @@ public class LoginDAO {
             }
 
             LoginDto loginDto = gson.fromJson(res, LoginDto.class);
-            return loginDto.getInstructor();
+            return loginDto.getBodybuilder();
         }
     }
 }
