@@ -1,0 +1,61 @@
+.headerBar {
+  -fx-background-color: #9B5E95;
+  -fx-min-height: 100px;
+}
+
+.backButton:hover {
+  -fx-cursor: hand;
+  -fx-padding: 10px;
+}
+
+.backButton {
+  -fx-padding: 10px;
+}
+
+.searchIcon {
+  -fx-background-color: #F8F8F8;
+  -fx-background-radius: 0 3 3 0;
+}
+
+.searchInput {
+  -fx-min-width: 700px;
+  -fx-min-height: 50px;
+  -fx-margin-left: 200px;
+  -fx-background-color: #F8F8F8;
+  -fx-background-radius: 3 0 0 3;
+}
+
+.searchButton {
+  -fx-min-height: 50px;
+  -fx-min-width: 100px;
+  -fx-background-color: #883F81;
+}
+
+.searchButton:hover {
+  -fx-cursor: hand;
+  -fx-background-color: #FFF;
+  -fx-text-fill: #883f81;
+}
+
+.footerBar {
+  -fx-pref-height: 50px;
+  -fx-border-color: rgba(0, 0, 0, 0.24);;
+  -fx-border-style: solid none none none;
+}
+
+.scrollList {
+    -fx-alignment: center ;
+    -fx-fit-to-width: true;
+}
+
+.bodybuilderStatus {
+  -fx-background-color: #76C179;
+  -fx-background-radius: 3 0 0 3;
+  -fx-pref-width: 15px;
+  -fx-pref-height: 100px;
+}
+
+.bodybuilderData {
+  -fx-background-color: #9B5E95;  -fx-background-radius: 0 3 3 0;
+  -fx-pref-height: 100px;
+}

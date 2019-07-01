@@ -1,0 +1,10 @@
+.inputForm {
+  -fx-pref-height: 50px;
+  -fx-background-color: #C4C4C4;
+  -fx-border-width: 2;
+  -fx-border-color: transparent;
+}
+
+.inputForm:focused {
+  -fx-border-color: #883F81;
+}

@@ -1,0 +1,28 @@
+.body {
+  -fx-background-color: linear-gradient(to bottom, #efefef 60%, #b1b1b1);
+}
+
+.container {
+  -fx-padding: 20px;
+}
+
+.logo {
+  -fx-padding: 28px;
+}
+
+.button {
+  -fx-background-color: #330c2f;
+  -fx-border-radius: 8px;
+  -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 10, 0, 0, 0);
+  -fx-cursor: hand;
+}
+
+.button:hover {
+  -fx-scale-x: 1.2;
+  -fx-scale-y: 1.2;
+}
+
+.footer {
+  -fx-border-width: 1 0 0 0;
+  -fx-border-color: rgba(0, 0, 0, 0.24);
+}

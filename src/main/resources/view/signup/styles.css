@@ -1,0 +1,74 @@
+.footerBar {
+  -fx-border-width: 2 0 0 0;
+  -fx-border-color: rgba(0, 0, 0, 0.24);
+}
+
+.backButton:hover {
+  -fx-scale-x: 1.5;
+  -fx-scale-y: 1.5;
+  -fx-cursor: hand;
+}
+
+.containerForm {
+  -fx-background-radius: 40;
+  -fx-border-width: 7;
+  -fx-border-radius: 40;
+  -fx-border-color: rgba(136, 63, 129, 0.6);
+}
+
+.nameForm {
+  -fx-fit-width: true;
+}
+
+.nameInput, 
+.cpfInput,
+.birthdayInput,
+.monthlyChargeInput,
+.telInput,
+.crefInput {
+  -fx-pref-height: 50px;
+  -fx-background-color: #C4C4C4;
+  -fx-border-width: 2;
+  -fx-border-color: transparent;
+}
+
+.nameInput:focused, 
+.cpfInput:focused,
+.birthdayInput:focused,
+.monthlyChargeInput:focused,
+.telInput:focused,
+.crefInput:focused {
+  -fx-border-color: #883F81;
+}
+
+.clearButton,
+.signupButton {
+  -fx-pref-height: 50px;
+  -fx-pref-width: 150px;
+  -fx-border-radius: 3;
+  -fx-background-radius: 3;
+  -fx-border-width: 3;
+}
+
+.clearButton {
+  -fx-border-width: 3;
+  -fx-border-color: #883F81;
+  -fx-background-color: transparent;
+}
+
+.clearButton:hover {
+  -fx-text-fill: #FFF;
+  -fx-background-color: #883F81;
+  -fx-cursor: hand;
+}
+
+.signupButton {
+  -fx-background-color: #883F81;
+}
+
+.signupButton:hover {
+  -fx-background-color: transparent;
+  -fx-border-color: #883F81;
+  -fx-text-fill: #883F81;
+  -fx-cursor: hand;
+}

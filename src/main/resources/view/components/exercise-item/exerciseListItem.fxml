@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
+         <children>
+            <Label text="Exercicio">
+               <font>
+                  <Font name="Raleway Bold" size="19.0" />
+               </font>
+            </Label>
+            <TextField id="exerciseInput" prefWidth="244.0" styleClass="inputForm" stylesheets="@styles.css">
+               <font>
+                  <Font name="Raleway" size="19.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+               <VBox.margin>
+                  <Insets right="15.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" fillWidth="false" HBox.hgrow="NEVER">
+         <children>
+            <Label text="Serie">
+               <font>
+                  <Font name="Raleway Bold" size="19.0" />
+               </font>
+            </Label>
+            <TextField id="serieInput" prefWidth="110.0" styleClass="inputForm" stylesheets="@styles.css">
+               <font>
+                  <Font name="Raleway" size="19.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </TextField>
+         </children>
+         <HBox.margin>
+            <Insets right="15.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" fillWidth="false" HBox.hgrow="NEVER">
+         <children>
+            <Label text="Repetiçoes">
+               <font>
+                  <Font name="Raleway Bold" size="19.0" />
+               </font>
+            </Label>
+            <TextField id="repetitionInput" prefWidth="110.0" styleClass="inputForm" stylesheets="@styles.css">
+               <font>
+                  <Font name="Raleway" size="19.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </TextField>
+         </children>
+         <HBox.margin>
+            <Insets right="15.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" fillWidth="false" HBox.hgrow="NEVER">
+         <children>
+            <Label text="Peso">
+               <font>
+                  <Font name="Raleway Bold" size="19.0" />
+               </font>
+            </Label>
+            <TextField id="weightInput" prefWidth="110.0" styleClass="inputForm" stylesheets="@styles.css">
+               <font>
+                  <Font name="Raleway" size="19.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </TextField>
+         </children>
+         <HBox.margin>
+            <Insets right="15.0" />
+         </HBox.margin>
+      </VBox>
+   </children>
+</HBox>

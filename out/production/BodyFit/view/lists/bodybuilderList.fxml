@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" styleClass="body" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="1024.0" styleClass="headerBar" stylesheets="@styles.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <VBox id="backButton" alignment="CENTER" styleClass="backButton" stylesheets="@styles.css">
+               <children>
+                  <SVGPath content="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111  C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587  c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z" fill="WHITE" rotate="180.0" smooth="false">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </SVGPath>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <TextField id="searchInput" promptText="Pesquisar Aluno" styleClass="searchInput" stylesheets="@styles.css">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Raleway" size="13.0" />
+                     </font></TextField>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" scaleX="0.7" scaleY="0.5" styleClass="searchIcon" stylesheets="@styles.css">
+                     <children>
+                        <SVGPath content="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" fill="#bfbfbfaf" scaleX="0.9" scaleY="0.9" />
+                     </children>
+                     <HBox.margin>
+                        <Insets left="-10.0" right="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+            <Button id="searchButton" mnemonicParsing="false" styleClass="searchButton" stylesheets="@styles.css" text="Buscar" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Raleway" size="22.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <ScrollPane id="bodybuilderScrollList" hbarPolicy="NEVER" layoutY="100.0" styleClass="scrollList" stylesheets="@styles.css" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="61.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+         <content>
+            <VBox id="bodybuilderListContainer" alignment="TOP_CENTER">
+               <children>
+                  <VBox id="bodybuilderList" alignment="CENTER" maxWidth="700.0" spacing="10.0" styleClass="bodybuilderList">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <Button id="addListButton" mnemonicParsing="false" styleClass="addListButton" text="+" AnchorPane.bottomAnchor="75.0" AnchorPane.rightAnchor="30.0">
+         <font>
+            <Font name="Raleway" size="44.0" />
+         </font>
+      </Button>
+      <HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="200.0" styleClass="footerBar" stylesheets="@styles.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <SVGPath content="M0.90332 60V1.68H9.03932V29.184L22.4313 1.68H29.9913L18.4713 27.384L31.8633 60H23.9433L12.7833 32.64L9.03932 39.408V60H0.90332Z M36.5518 60V1.68H44.6878V54.168H59.5918V60H36.5518Z M107.025 51.9832L94.3374 21.0571C93.6338 19.3414 93.2767 17.5314 93.2767 15.677V7.50229C93.2767 6.62201 93.6196 5.79437 94.2422 5.17181C95.0011 4.41284 95.4195 3.40347 95.4195 2.33002V1.17188C95.4195 0.524597 94.8945 0 94.2477 0H77.8858C77.2385 0 76.7139 0.524597 76.7139 1.17188V2.33002C76.7139 3.40347 77.1319 4.41284 77.8908 5.17181C78.5134 5.79437 78.8563 6.62201 78.8563 7.50275V15.677C78.8563 17.5314 78.4997 19.3414 77.7956 21.0571L74.3093 29.5551C74.3079 29.5583 74.3066 29.5615 74.3052 29.5647L65.1078 51.9832C64.3713 53.779 64.5768 55.8138 65.658 57.4255C66.7393 59.0378 68.5433 60 70.4842 60H101.649C103.59 60 105.394 59.0378 106.475 57.4255C107.556 55.8133 107.762 53.779 107.025 51.9832ZM79.9641 21.9466C80.7844 19.9475 81.2 17.8381 81.2 15.677V7.50229C81.2 5.99625 80.6136 4.57993 79.5484 3.51471C79.2353 3.2016 79.0613 2.78595 79.0577 2.34375H93.0758C93.0721 2.78595 92.8982 3.20114 92.5846 3.51471C91.5198 4.57993 90.933 5.99579 90.933 7.50229V15.6766C90.933 17.8377 91.3491 19.9471 92.169 21.9461L94.9984 28.8428H77.1346L79.9641 21.9466ZM104.529 56.12C103.874 57.0964 102.824 57.6562 101.649 57.6562H70.4842C69.3092 57.6562 68.2595 57.0964 67.6044 56.12C67.1105 55.3835 66.9219 54.5293 67.0501 53.687H68.9809C69.6278 53.687 70.1528 53.1619 70.1528 52.5151C70.1528 51.8678 69.6278 51.3432 68.9809 51.3432H67.9043L69.2501 48.062H71.2267C71.874 48.062 72.3986 47.5369 72.3986 46.8901C72.3986 46.2428 71.874 45.7182 71.2267 45.7182H70.2119L71.5577 42.437H73.5902C74.2374 42.437 74.762 41.9119 74.762 41.2651C74.762 40.6178 74.2374 40.0932 73.5902 40.0932H72.5194L73.8657 36.812H75.9531C76.6004 36.812 77.125 36.2869 77.125 35.6401C77.125 34.9928 76.6004 34.4682 75.9531 34.4682H74.827L76.1733 31.187H95.9597L104.857 52.8731C105.303 53.9603 105.183 55.144 104.529 56.12Z M111.657 60V1.68H125.049C127.689 1.68 129.969 1.968 131.889 2.544C133.857 3.12 135.489 4.008 136.785 5.208C138.081 6.408 139.041 7.944 139.665 9.816C140.289 11.64 140.601 13.8 140.601 16.296C140.601 18.696 140.289 20.784 139.665 22.56C139.089 24.288 138.177 25.656 136.929 26.664C135.729 27.672 134.169 28.32 132.249 28.608C134.601 29.136 136.497 30.048 137.937 31.344C139.377 32.592 140.433 34.224 141.105 36.24C141.825 38.208 142.185 40.584 142.185 43.368C142.185 45.864 141.897 48.144 141.321 50.208C140.745 52.272 139.833 54.024 138.585 55.464C137.385 56.904 135.825 58.032 133.905 58.848C132.033 59.616 129.801 60 127.209 60H111.657ZM119.793 54.168H125.265C128.913 54.168 131.337 53.328 132.537 51.648C133.785 49.92 134.409 47.16 134.409 43.368C134.409 40.92 134.073 38.88 133.401 37.248C132.777 35.568 131.745 34.32 130.305 33.504C128.913 32.64 127.017 32.208 124.617 32.208H119.793V54.168ZM119.793 26.016H124.617C126.921 26.016 128.721 25.704 130.017 25.08C131.313 24.408 132.225 23.352 132.753 21.912C133.281 20.472 133.545 18.6 133.545 16.296C133.545 13.608 133.137 11.664 132.321 10.464C131.505 9.264 130.233 8.52 128.505 8.232C126.777 7.896 124.521 7.728 121.737 7.728H119.793V26.016Z" fill="#330c2f" scaleX="0.6" scaleY="0.6" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

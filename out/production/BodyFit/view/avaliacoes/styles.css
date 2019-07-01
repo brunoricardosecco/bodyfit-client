@@ -1,0 +1,49 @@
+.body {
+  -fx-background-color: linear-gradient(to bottom, #efefef 60%, #b1b1b1);
+}
+
+.container {
+  -fx-padding: 20px;
+}
+
+.logo {
+  -fx-padding: 28px;
+}
+
+.memo {
+  -fx-font-size: 16px;
+  -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0, 0, 0);
+  -fx-background-color: #efefef;
+  -fx-border-radius: 8px 8px 0 0;
+  -fx-background-radius: 8px 8px 0 0;
+}
+
+.memo .label {
+  -fx-padding: 8px 28px;
+  -fx-border-radius: 8px 8px 0 0;
+  -fx-background-radius: 8px 8px 0 0;
+}
+
+.green {
+  -fx-background-color: #76c179;
+}
+
+.scroll .viewport {
+  -fx-background-color: transparent;
+}
+.scroll {
+  -fx-background-color: transparent;
+}
+.container {
+  -fx-fit-to-width: true;
+  -fx-padding: 10px;
+}
+
+.red {
+  -fx-background-color: #df7373;
+}
+
+.footer {
+  -fx-border-width: 1 0 0 0;
+  -fx-border-color: rgba(0, 0, 0, 0.24);
+}

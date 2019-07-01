@@ -1,0 +1,65 @@
+.footerBar {
+  -fx-border-width: 2 0 0 0;
+  -fx-border-color: rgba(0, 0, 0, 0.24);
+}
+
+.backButton:hover {
+  -fx-scale-x: 1.5;
+  -fx-scale-y: 1.5;
+  -fx-cursor: hand;
+}
+
+.containerForm {
+  -fx-border-width: 0;
+  -fx-border-color: transparent;
+  -fx-background-insets: 0;
+  -fx-padding: 0;
+}
+
+
+.inputForm {
+  -fx-pref-height: 50px;
+  -fx-background-color: #C4C4C4;
+  -fx-border-width: 2;
+  -fx-border-color: transparent;
+}
+
+.inputForm:focused {
+  -fx-border-color: #883F81;
+}
+
+.buttonForm {
+  -fx-pref-height: 50px;
+  -fx-pref-width: 150px;
+  -fx-border-radius: 3;
+  -fx-background-radius: 3;
+  -fx-border-width: 3;
+  -fx-background-insets: 0,1,2;
+  -fx-padding: 0;
+}
+
+.buttonAddForm {
+  -fx-border-width: 3;
+  -fx-border-color: #883F81;
+  -fx-background-color: transparent;
+}
+
+.buttonAddForm:hover {
+  -fx-text-fill: #FFF;
+  -fx-background-color: #883F81;
+  -fx-cursor: hand;
+}
+
+.buttonSignupForm {
+  -fx-border-width: 3;
+  -fx-border-color: #883F81;
+  -fx-background-color: #883F81;
+  -fx-text-fill: #FFF;
+}
+
+.buttonSignupForm:hover {
+  -fx-text-fill: #000;
+  -fx-background-color: transparent;
+  -fx-border-color: #883F81;
+  -fx-cursor: hand;
+}

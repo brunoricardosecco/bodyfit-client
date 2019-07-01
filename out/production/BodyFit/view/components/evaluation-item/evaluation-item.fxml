@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane styleClass="item" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label id="name" alignment="CENTER" text="Name" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Raleway" size="18.0" />
+         </font>
+      </Label>
+      <Label id="date" alignment="CENTER" text="Data de Avali.: 12/02/2019" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Raleway" size="18.0" />
+         </font>
+      </Label>
+      <Label id="time" alignment="CENTER" text="Hora: 17:30" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Raleway" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

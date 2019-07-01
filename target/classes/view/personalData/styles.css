@@ -1,0 +1,69 @@
+.footerBar {
+  -fx-border-width: 2 0 0 0;
+  -fx-border-color: rgba(0, 0, 0, 0.24);
+}
+
+.backButton:hover {
+  -fx-scale-x: 1.5;
+  -fx-scale-y: 1.5;
+  -fx-cursor: hand;
+}
+
+.createCircuitButton,
+.createEvaluationButton {
+  -fx-pref-height: 50px;
+  -fx-pref-width: 150px;
+  -fx-border-radius: 3;
+  -fx-background-radius: 3;
+  -fx-border-width: 3;
+}
+
+.createCircuitButton,
+.createEvaluationButton {
+  -fx-background-color: #883F81;
+}
+
+.createCircuitButton:hover,
+.createEvaluationButton:hover {
+  -fx-background-color: transparent;
+  -fx-border-color: #883F81;
+  -fx-text-fill: #883F81;
+  -fx-cursor: hand;
+}
+
+.anchorModal {
+  -fx-background-color: rgba(0, 0, 0, 0.6);
+}
+
+.containerModal {
+  -fx-background-color: #f3f3f3;
+}
+
+.inputForm {
+  -fx-pref-height: 50px;
+  -fx-background-color: #C4C4C4;
+  -fx-border-width: 2;
+  -fx-border-color: transparent;
+  -fx-border-radius: 0;
+  -fx-background-radius: 0;
+}
+
+.inputForm:focused {
+  -fx-border-color: #883F81;
+}
+
+.buttonForm{
+  -fx-pref-height: 50px;
+  -fx-pref-width: 150px;
+  -fx-border-radius: 3;
+  -fx-background-radius: 3;
+  -fx-border-width: 3;
+  -fx-background-color: #883F81;
+}
+
+.buttonForm:hover {
+  -fx-background-color: transparent;
+  -fx-border-color: #883F81;
+  -fx-text-fill: #883F81;
+  -fx-cursor: hand;
+}
