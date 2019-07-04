@@ -2,18 +2,48 @@
   -fx-background-color: #efefef;
 }
 
-.scrollPane {
+.topCard {
+  -fx-border-radius: 3 3 0 0;
+  -fx-background-radius: 3 3 0 0;
+}
+
+.bottomCard {
+  -fx-background-color: #fff;
+  -fx-border-radius: 0 0 3 3;
+  -fx-background-radius: 0 0 3 3;
+}
+
+.card {
+  -fx-effect: dropshadow(two-pass-box, rgb(119, 115, 115), 5, 0.01, 1, 2);
+}
+
+.scrollPane, .itemList{
   -fx-border-width: 0;
   -fx-background-color: #efefef;
   -fx-border-color: transparent;
   -fx-padding: 0;
-  -fx-background-insets: 0;
-  -fx-control-inner-background: transparent;
 }
 
-.scrollPane > .viewport {
-  -fx-background-color: transparent;
+
+
+.repetitionsColumn {
+  -fx-border-width: 0 1 0 1 ;
+  -fx-border-color: #000;
 }
+
+.seriesColumn {
+  -fx-border-width: 0 1 0 0 ;
+  -fx-border-color: #000;
+}
+
+.nextEvaluation {
+  -fx-background-color: #69F0AE;
+}
+
+.nextCharge {
+  -fx-background-color: #FF5252;
+}
+
 .footer {
   -fx-border-width: 1 0 0 0;
   -fx-border-color: rgba(0, 0, 0, 0.24);

@@ -2,13 +2,16 @@ com/bodyfit/helper/Request.class
 com/bodyfit/controller/bodybuilder/BodybuilderController.class
 com/bodyfit/dao/LoginDAO.class
 com/bodyfit/controller/dashboard/DashboardController$1.class
+com/bodyfit/model/Workout.class
 com/bodyfit/controller/dashboard/DashboardController.class
 com/bodyfit/Main.class
 com/bodyfit/model/Evaluation.class
 com/bodyfit/dao/BodybuilderDAO.class
 com/bodyfit/model/Bodybuilder.class
 com/bodyfit/dto/BodyBuilderDTO.class
+com/bodyfit/dao/DashboardDAO.class
 com/bodyfit/controller/login/LoginController.class
+com/bodyfit/dto/WorkoutDTO.class
 com/bodyfit/model/Instructor.class
 com/bodyfit/model/Test.class
 com/bodyfit/dto/LoginDto.class

@@ -2,11 +2,9 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.effect.DropShadow?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.SVGPath?>
@@ -17,6 +15,66 @@
       <VBox id="signoutButton" fx:id="signoutButton" styleClass="signoutButton" AnchorPane.bottomAnchor="650.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="900.0" AnchorPane.topAnchor="60.0">
          <children>
             <SVGPath content="M182.725,379.151c-0.572-1.522-0.769-2.816-0.575-3.863c0.193-1.04-0.472-1.902-1.997-2.566    c-1.525-0.664-2.286-1.191-2.286-1.567c0-0.38-1.093-0.667-3.284-0.855c-2.19-0.191-3.283-0.288-3.283-0.288h-3.71h-3.14H82.224    c-12.562,0-23.317-4.469-32.264-13.421c-8.945-8.946-13.417-19.698-13.417-32.258V123.335c0-12.562,4.471-23.313,13.417-32.259    c8.947-8.947,19.702-13.422,32.264-13.422h91.361c2.475,0,4.421-0.614,5.852-1.854c1.425-1.237,2.375-3.094,2.853-5.568    c0.476-2.474,0.763-4.708,0.859-6.707c0.094-1.997,0.048-4.521-0.144-7.566c-0.189-3.044-0.284-4.947-0.284-5.712    c0-2.474-0.905-4.611-2.712-6.423c-1.809-1.804-3.949-2.709-6.423-2.709H82.224c-22.648,0-42.016,8.042-58.101,24.125    C8.042,81.323,0,100.688,0,123.338v200.994c0,22.648,8.042,42.018,24.123,58.095c16.085,16.091,35.453,24.133,58.101,24.133    h91.365c2.475,0,4.422-0.622,5.852-1.854c1.425-1.239,2.375-3.094,2.853-5.571c0.476-2.471,0.763-4.716,0.859-6.707    c0.094-1.999,0.048-4.518-0.144-7.563C182.818,381.817,182.725,379.915,182.725,379.151z&#10;M442.249,210.989L286.935,55.67c-3.614-3.612-7.898-5.424-12.847-5.424c-4.949,0-9.233,1.812-12.851,5.424    c-3.617,3.617-5.424,7.904-5.424,12.85v82.226H127.907c-4.952,0-9.233,1.812-12.85,5.424c-3.617,3.617-5.424,7.901-5.424,12.85    v109.636c0,4.948,1.807,9.232,5.424,12.847c3.621,3.61,7.901,5.427,12.85,5.427h127.907v82.225c0,4.945,1.807,9.233,5.424,12.847    c3.617,3.617,7.901,5.428,12.851,5.428c4.948,0,9.232-1.811,12.847-5.428L442.249,236.69c3.617-3.62,5.425-7.898,5.425-12.848    C447.674,218.894,445.866,214.606,442.249,210.989z" fill="#330c2f" scaleX="0.1" scaleY="0.1" translateX="-200.0" translateY="-170.0" />
+         </children>
+      </VBox>
+      <VBox AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <VBox styleClass="card">
+               <children>
+                  <VBox alignment="CENTER" styleClass="topCard, nextEvaluation" stylesheets="@styles.css">
+                     <children>
+                        <Label text="Proxima Avaliação">
+                           <font>
+                              <Font name="Raleway" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" styleClass="bottomCard">
+                     <children>
+                        <Label id="nextEvaluationLabel" fx:id="nextEvaluationLabel" text="21/12/2000">
+                           <font>
+                              <Font name="Raleway" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <effect>
+                  <DropShadow blurType="ONE_PASS_BOX" />
+               </effect>
+            </VBox>
+            <VBox styleClass="card">
+               <children>
+                  <VBox alignment="CENTER" styleClass="topCard, nextCharge">
+                     <children>
+                        <Label text="Proxima Mensalidade">
+                           <font>
+                              <Font name="Raleway" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="5.0" right="5.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" styleClass="bottomCard">
+                     <children>
+                        <Label id="nextChargeLabel" fx:id="nextChargeLabel" text="21/12/2000">
+                           <font>
+                              <Font name="Raleway" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </VBox>
          </children>
       </VBox>
       <HBox alignment="CENTER" styleClass="logo" stylesheets="@styles.css" AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="90.0">
@@ -40,70 +98,68 @@
             </VBox>
          </children>
       </HBox>
-      <VBox alignment="CENTER" layoutX="250.0" layoutY="6.0" prefHeight="768.0" prefWidth="1024.0" styleClass="container" stylesheets="@styles.css" AnchorPane.bottomAnchor="81.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
+      <HBox AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="175.0">
          <children>
-            <FlowPane alignment="CENTER" columnHalignment="CENTER" hgap="30.0" prefWrapLength="100.0" vgap="10.0" VBox.vgrow="NEVER">
-               <children>
-                  <VBox fx:id="bodybuilderBtn" alignment="BOTTOM_CENTER" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" styleClass="button" stylesheets="@styles.css">
-                     <children>
-                        <ImageView fitHeight="150.0" fitWidth="150.0" scaleX="0.6" scaleY="0.6" VBox.vgrow="NEVER">
-                           <image>
-                              <Image url="@../../weightlifter.png" />
-                           </image>
-                        </ImageView>
-                        <Label stylesheets="@styles.css" text="Alunos" textFill="WHITE">
-                           <font>
-                              <Font name="Khand Light" size="24.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </VBox>
-                  <VBox fx:id="instructorBtn" alignment="BOTTOM_CENTER" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" styleClass="button" stylesheets="@styles.css">
-                     <children>
-                        <ImageView fitHeight="150.0" fitWidth="150.0" scaleX="0.6" scaleY="0.6" VBox.vgrow="NEVER">
-                           <image>
-                              <Image url="@../../weight-lifting.png" />
-                           </image>
-                        </ImageView>
-                        <Label stylesheets="@styles.css" text="Professores" textFill="WHITE">
-                           <font>
-                              <Font name="Khand Light" size="24.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </VBox>
-                  <VBox fx:id="feeBtn" alignment="BOTTOM_CENTER" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" styleClass="button" stylesheets="@styles.css">
-                     <children>
-                        <ImageView fitHeight="150.0" fitWidth="150.0" scaleX="0.6" scaleY="0.6" VBox.vgrow="NEVER">
-                           <image>
-                              <Image url="@../../bill.png" />
-                           </image>
-                        </ImageView>
-                        <Label contentDisplay="CENTER" stylesheets="@styles.css" text="Mensalidades" textFill="WHITE">
-                           <font>
-                              <Font name="Khand Light" size="24.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </VBox>
-                  <VBox fx:id="evaluationBtn" alignment="BOTTOM_CENTER" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" styleClass="button" stylesheets="@styles.css">
-                     <children>
-                        <ImageView fitHeight="150.0" fitWidth="150.0" scaleX="0.6" scaleY="0.6" VBox.vgrow="NEVER">
-                           <image>
-                              <Image url="@../../check-list.png" />
-                           </image>
-                        </ImageView>
-                        <Label alignment="CENTER" contentDisplay="CENTER" stylesheets="@styles.css" text="Avaliações" textFill="WHITE" VBox.vgrow="ALWAYS">
-                           <font>
-                              <Font name="Khand Light" size="24.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </VBox>
-               </children>
-            </FlowPane>
+            <Label text="Intensidade: ">
+               <font>
+                  <Font name="Raleway" size="15.0" />
+               </font>
+            </Label>
+            <Label id="intensityLabel" fx:id="intensityLabel" text="--">
+               <font>
+                  <Font name="Raleway" size="15.0" />
+               </font>
+            </Label>
          </children>
-      </VBox>
+      </HBox>
+      <HBox AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="204.0">
+         <children>
+            <VBox alignment="CENTER" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="Exercicio">
+                     <font>
+                        <Font name="Raleway" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" styleClass="repetitionsColumn" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="Repetiçoes">
+                     <font>
+                        <Font name="Raleway" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" styleClass="seriesColumn" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="Series">
+                     <font>
+                        <Font name="Raleway" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="Peso">
+                     <font>
+                        <Font name="Raleway" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets right="15.0" />
+         </padding>
+      </HBox>
+      <ScrollPane fitToHeight="true" fitToWidth="true" styleClass="scrollPane" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="61.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="260.0">
+         <content>
+            <VBox id="dashBoardList" fx:id="dashBoardList" spacing="20.0" styleClass="itemList" />
+         </content>
+      </ScrollPane>
       <HBox alignment="CENTER_RIGHT" styleClass="footer" stylesheets="@styles.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
             <SVGPath content="M111.025 77.9832L98.3373 47.0571C97.6337 45.3414 97.2766 43.5314 97.2766 41.677V33.5023C97.2766 32.622 97.6195 31.7944 98.2421 31.1718C99.001 30.4128 99.4194 29.4035 99.4194 28.33V27.1719C99.4194 26.5246 98.8944 26 98.2476 26H81.8857C81.2384 26 80.7138 26.5246 80.7138 27.1719V28.33C80.7138 29.4035 81.1318 30.4128 81.8907 31.1718C82.5133 31.7944 82.8562 32.622 82.8562 33.5027V41.677C82.8562 43.5314 82.4996 45.3414 81.7955 47.0571L78.3092 55.5551C78.3078 55.5583 78.3065 55.5615 78.3051 55.5647L69.1077 77.9832C68.3711 79.779 68.5767 81.8138 69.6579 83.4255C70.7392 85.0378 72.5432 86 74.4841 86H105.649C107.59 86 109.394 85.0378 110.475 83.4255C111.556 81.8133 111.762 79.779 111.025 77.9832ZM83.964 47.9466C84.7843 45.9475 85.1999 43.8381 85.1999 41.677V33.5023C85.1999 31.9962 84.6135 30.5799 83.5483 29.5147C83.2352 29.2016 83.0612 28.7859 83.0576 28.3438H97.0757C97.072 28.7859 96.8981 29.2011 96.5845 29.5147C95.5197 30.5799 94.9329 31.9958 94.9329 33.5023V41.6766C94.9329 43.8377 95.349 45.9471 96.1688 47.9461L98.9983 54.8428H81.1345L83.964 47.9466ZM108.528 82.12C107.874 83.0964 106.824 83.6562 105.649 83.6562H74.4841C73.309 83.6562 72.2594 83.0964 71.6043 82.12C71.1104 81.3835 70.9218 80.5293 71.05 79.687H72.9808C73.6276 79.687 74.1527 79.1619 74.1527 78.5151C74.1527 77.8678 73.6276 77.3432 72.9808 77.3432H71.9042L73.25 74.062H75.2266C75.8739 74.062 76.3985 73.5369 76.3985 72.8901C76.3985 72.2428 75.8739 71.7182 75.2266 71.7182H74.2118L75.5576 68.437H77.59C78.2373 68.437 78.7619 67.9119 78.7619 67.2651C78.7619 66.6178 78.2373 66.0932 77.59 66.0932H76.5193L77.8656 62.812H79.953C80.6003 62.812 81.1249 62.2869 81.1249 61.6401C81.1249 60.9928 80.6003 60.4682 79.953 60.4682H78.8269L80.1732 57.187H99.9596L108.857 78.8731C109.303 79.9603 109.183 81.144 108.528 82.12Z&#10;M105.238 78.0564C104.993 77.4572 104.309 77.1706 103.71 77.4155C103.111 77.6609 102.824 78.3448 103.069 78.944L103.075 78.9587C103.261 79.4123 103.698 79.687 104.16 79.687C104.308 79.687 104.458 79.659 104.604 79.5995C105.202 79.3542 105.489 78.6698 105.244 78.071L105.238 78.0564Z&#10;M103.582 74.0189L99.3851 63.7897C99.1397 63.191 98.4554 62.9044 97.8561 63.1502C97.2574 63.3956 96.9713 64.0804 97.2166 64.6792L101.413 74.9084C101.599 75.362 102.036 75.6358 102.498 75.6358C102.646 75.6358 102.797 75.6078 102.942 75.5479C103.541 75.3025 103.828 74.6177 103.582 74.0189Z&#10;M4.90319 86V27.68H13.0392V55.184L26.4312 27.68H33.9912L22.4712 53.384L35.8632 86H27.9432L16.7832 58.64L13.0392 65.408V86H4.90319ZM40.5516 86V27.68H48.6876V80.168H63.5916V86H40.5516Z&#10;M115.657 86V27.68H129.049C131.689 27.68 133.969 27.968 135.889 28.544C137.857 29.12 139.489 30.008 140.785 31.208C142.081 32.408 143.041 33.944 143.665 35.816C144.289 37.64 144.601 39.8 144.601 42.296C144.601 44.696 144.289 46.784 143.665 48.56C143.089 50.288 142.177 51.656 140.929 52.664C139.729 53.672 138.169 54.32 136.249 54.608C138.601 55.136 140.497 56.048 141.937 57.344C143.377 58.592 144.433 60.224 145.105 62.24C145.825 64.208 146.185 66.584 146.185 69.368C146.185 71.864 145.897 74.144 145.321 76.208C144.745 78.272 143.833 80.024 142.585 81.464C141.385 82.904 139.825 84.032 137.905 84.848C136.033 85.616 133.801 86 131.209 86H115.657ZM123.793 80.168H129.265C132.913 80.168 135.337 79.328 136.537 77.648C137.785 75.92 138.409 73.16 138.409 69.368C138.409 66.92 138.073 64.88 137.401 63.248C136.777 61.568 135.745 60.32 134.305 59.504C132.913 58.64 131.017 58.208 128.617 58.208H123.793V80.168ZM123.793 52.016H128.617C130.921 52.016 132.721 51.704 134.017 51.08C135.313 50.408 136.225 49.352 136.753 47.912C137.281 46.472 137.545 44.6 137.545 42.296C137.545 39.608 137.137 37.664 136.321 36.464C135.505 35.264 134.233 34.52 132.505 34.232C130.777 33.896 128.521 33.728 125.737 33.728H123.793V52.016Z" fill="#330c2f" scaleX="0.6" scaleY="0.6" />

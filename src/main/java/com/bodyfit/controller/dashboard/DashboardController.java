@@ -1,30 +1,31 @@
 package com.bodyfit.controller.dashboard;
 
 import com.bodyfit.controller.login.LoginController;
+import com.bodyfit.dao.DashboardDAO;
 import com.bodyfit.model.Bodybuilder;
-import com.bodyfit.model.Instructor;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
-import javafx.scene.shape.SVGPath;
 import javafx.stage.Stage;
-
-import javafx.stage.Window;
 
 import java.io.IOException;
 import java.util.concurrent.ExecutionException;
 
 public class DashboardController {
     private Bodybuilder user;
+    private DashboardDAO dashboardDAO;
 
     @FXML
     private VBox signoutButton;
 
+
+    public DashboardController() {
+         dashboardDAO = new DashboardDAO();
+    }
 
     public void start(Stage stage, Bodybuilder bodybuilder) throws IOException {
         FXMLLoader loader = new FXMLLoader(
@@ -39,6 +40,7 @@ public class DashboardController {
         stage.show();
 
         this.user = bodybuilder;
+        dashboardDAO.getWorkout(bodybuilder.getId());
 
         signoutButton.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
             @Override

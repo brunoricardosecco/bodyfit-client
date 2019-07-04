@@ -7,6 +7,9 @@
 /home/bruno/Documentos/dev/body-fit-client/src/main/java/com/bodyfit/dto/BodyBuilderDTO.java
 /home/bruno/Documentos/dev/body-fit-client/src/main/java/com/bodyfit/controller/login/LoginController.java
 /home/bruno/Documentos/dev/body-fit-client/src/main/java/com/bodyfit/helper/Request.java
+/home/bruno/Documentos/dev/body-fit-client/src/main/java/com/bodyfit/dao/DashboardDAO.java
+/home/bruno/Documentos/dev/body-fit-client/src/main/java/com/bodyfit/dto/WorkoutDTO.java
+/home/bruno/Documentos/dev/body-fit-client/src/main/java/com/bodyfit/model/Workout.java
 /home/bruno/Documentos/dev/body-fit-client/src/main/java/com/bodyfit/dto/LoginDto.java
 /home/bruno/Documentos/dev/body-fit-client/src/main/java/com/bodyfit/Main.java
 /home/bruno/Documentos/dev/body-fit-client/src/main/java/com/bodyfit/dao/BodybuilderDAO.java
